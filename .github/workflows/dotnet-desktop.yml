@@ -116,6 +116,18 @@ jobs:
         Appx_Bundle_Platforms: x86|x64
         Appx_Package_Build_Mode: StoreUpload
         Configuration: ${{ matrix.configuration }}
+        
+    - name: Build Docker Image
+      run: |
+        docker build -t milczarekjan/workflowimage:${{ env.VersionNumber }} .
+      env:
+        VersionNumber: ${{ env.VersionNumber }}
+        
+    - name: Log in to Docker Hub
+      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+      
+    - name: Push Docker Image
+      run: docker push your-docker-username/your-image-name:${{ env.VersionNumber }}
 
 
     # Remove the pfx
