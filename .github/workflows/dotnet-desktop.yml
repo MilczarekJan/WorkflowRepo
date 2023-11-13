@@ -59,6 +59,7 @@ jobs:
       Solution_Name: Dzien11.sln # Replace with your solution name, i.e. MyWpfApp.sln.
       Test_Project_Path: P04WeatherForecastAPI.Client.Tests\P04WeatherForecastAPI.Client.Tests.csproj # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
       Wap_Project_Path: P04WeatherForecastAPI.Client\P04WeatherForecastAPI.Client.csproj
+      Wap_Project_Directory: P04WeatherForecastAPI.Client
       VersionNumber: 1.0
 
     steps:
