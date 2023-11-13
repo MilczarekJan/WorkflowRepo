@@ -58,6 +58,7 @@ jobs:
     env:
       Solution_Name: Dzien11.sln # Replace with your solution name, i.e. MyWpfApp.sln.
       Test_Project_Path: P04WeatherForecastAPI.Client.Tests\P04WeatherForecastAPI.Client.Tests.csproj # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Wap_Project_Path: P04WeatherForecastAPI.Client\P04WeatherForecastAPI.Client.csproj
       VersionNumber: 1.0
 
     steps:
@@ -118,12 +119,12 @@ jobs:
 
     # Remove the pfx
     
-    #- name: Remove the pfx
-    #  run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
+    - name: Remove the pfx
+      run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
-    #- name: Upload build artifacts
-    #  uses: actions/upload-artifact@v3
-    #  with:
-    #    name: MSIX Package ${{ env.VersionNumber }}
-    #    path: ${{ env.Wap_Project_Directory }}\AppPackages
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: MSIX Package ${{ env.VersionNumber }}
+        path: ${{ env.Wap_Project_Directory }}\AppPackages
