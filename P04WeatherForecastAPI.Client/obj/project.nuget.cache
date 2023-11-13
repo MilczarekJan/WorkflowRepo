@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TLKSNGNIjhSdcoYwq3GWkWShY69LDQKCC3N/3BAs+MnqzYSjSdT/4I+KD39fxz5RxgwlosBk+BCdxobYbFu9FA==",
+  "dgSpecHash": "TTqPLVfLXWWZpaBhjnyWqZDfAy2bczMIRimTyacXtAIbiWjLvm1GpK8TVVsnhTj433MZl3uoFspbpL6J4QYJPA==",
   "success": true,
-  "projectFilePath": "C:\\Studia\\Aplikacje_webowe_itp\\Aplikacje_Mobilne_i_webowe_Lab_1\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
+  "projectFilePath": "C:\\Studia\\Metodyki_wytwarzania_oprogramowania\\Lab4\\WorkflowRepo\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\milcz\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\milcz\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

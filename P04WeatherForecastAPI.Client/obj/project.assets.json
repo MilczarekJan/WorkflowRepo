@@ -766,11 +766,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Studia\\Aplikacje_webowe_itp\\Aplikacje_Mobilne_i_webowe_Lab_1\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
+      "projectUniqueName": "C:\\Studia\\Metodyki_wytwarzania_oprogramowania\\Lab4\\WorkflowRepo\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
       "projectName": "P04WeatherForecastAPI.Client",
-      "projectPath": "C:\\Studia\\Aplikacje_webowe_itp\\Aplikacje_Mobilne_i_webowe_Lab_1\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
+      "projectPath": "C:\\Studia\\Metodyki_wytwarzania_oprogramowania\\Lab4\\WorkflowRepo\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
       "packagesPath": "C:\\Users\\milcz\\.nuget\\packages\\",
-      "outputPath": "C:\\Studia\\Aplikacje_webowe_itp\\Aplikacje_Mobilne_i_webowe_Lab_1\\P04WeatherForecastAPI.Client\\obj\\",
+      "outputPath": "C:\\Studia\\Metodyki_wytwarzania_oprogramowania\\Lab4\\WorkflowRepo\\P04WeatherForecastAPI.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\milcz\\AppData\\Roaming\\NuGet\\NuGet.Config",
