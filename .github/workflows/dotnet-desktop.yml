@@ -116,6 +116,17 @@ jobs:
         Appx_Bundle_Platforms: x86|x64
         Appx_Package_Build_Mode: StoreUpload
         Configuration: ${{ matrix.configuration }}
+    # Remove the pfx
+    
+    - name: Remove the pfx
+      run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
+
+    # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: MSIX Package ${{ env.VersionNumber }}
+        path: ${{ env.Wap_Project_Directory }}\AppPackages
         
     - name: Build Docker Image
       run: |
@@ -128,16 +139,3 @@ jobs:
       
     - name: Push Docker Image
       run: docker push your-docker-username/your-image-name:${{ env.VersionNumber }}
-
-
-    # Remove the pfx
-    
-    - name: Remove the pfx
-      run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
-
-    # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: MSIX Package ${{ env.VersionNumber }}
-        path: ${{ env.Wap_Project_Directory }}\AppPackages
